@@ -1,0 +1,10 @@
+- var n_rows = 6, n_cols = 12, n_hex = 6;
+- var n = n_rows*n_cols;
+
+.scene
+	.assembly
+		while n--
+			- var n_faces = n_hex + 1;
+			.prism6
+				while n_faces--
+					.prism6__face
